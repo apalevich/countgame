@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 import sys
 
 def sum_till_ones(number):
@@ -6,7 +9,8 @@ def sum_till_ones(number):
 
     #add digits to the name one by one
     for symb in str(number):
-        output += int(symb)
+        if symb.isnumeric():
+            output += int(symb)
 
     #check if sum of the digits contains more than one digits
     if output >= 10:

@@ -24,5 +24,5 @@ if __name__ == '__main__':
     try:
         sum_till_ones(sys.argv[1])
     except IndexError:
-        user_number = input('Введите число:\n')
+        user_number = input('Enter your number:\n')
         sum_till_ones(user_number)

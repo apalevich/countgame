@@ -32,6 +32,13 @@ foo@bar:~$ python .\countgame.py 8365
 Don't worry if your number contains additional symbols (like - in telephone number or / in dates) till **countgame.py** can sort it automatically:
 
 ```console
-foo@bar:~$ python .\countgame.py +7 (123) 456-78-90
+foo@bar:~$ python .\countgame.py 13/12/1918
 7
+```
+
+But if your input contains spaces, use launching or wrap your arguments up with a pair of quotes (single or double):
+
+```console
+foo@bar:~$ python .\countgame.py  '+7 (123) 456-78-90'
+8
 ```

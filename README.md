@@ -10,4 +10,4 @@ Example:
 Output: 4**
 
 
-Based on unnamed road game from Odessa
+Based on a road game from Odessa

@@ -1,21 +1,20 @@
 import sys
 
 def sum_till_ones(number):
+    #create name for adding digits
     output = 0
 
+    #add digits to the name one by one
     for symb in str(number):
         output += int(symb)
 
-        if output >= 10:
-            temp_out = 0
-            deconst = str(output)
+    #check if sum of the digits contains more than one digits
+    if output >= 10:
+        sum_till_ones(output)
 
-            for i in deconst:
-                temp_out += int(i)
-
-            output = temp_out
-
-    print(output)
+    #print or return answer when it represented by one digit
+    else:
+        print(output)
 
 if __name__ == '__main__':
     try:
